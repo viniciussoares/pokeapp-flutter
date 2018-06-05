@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../components/activity_indicator.dart';
 import '../components/backdrop.dart';
+import '../components/pokemon_tile.dart';
 import '../model/pokemon.dart';
 
 class PokemonList extends StatefulWidget {
@@ -60,6 +61,19 @@ class _PokemonList extends State<PokemonList> {
       return Backdrop(child: ActivityIndicator());
     }
 
-    return Backdrop(child: Container());
+    var orientation = MediaQuery.of(context).orientation;
+    var rows = orientation == Orientation.portrait ? 2 : 3;
+
+    return Backdrop(child: GridView.count(
+        crossAxisCount: rows,
+        // childAspectRatio: 3.0,
+        children: _pokemons.map((Pokemon item) {
+          return PokemonTile(
+            pokemon: item,
+            onTap: (item) => debugPrint("Pokemon tap"),
+          );
+        }).toList(),
+      )
+    );
   }
 }
