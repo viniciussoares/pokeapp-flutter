@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../components/activity_indicator.dart';
 import '../components/backdrop.dart';
 import '../components/pokemon_tile.dart';
+import '../components/poke_app_bar.dart';
 import '../model/pokemon.dart';
 
 class PokemonList extends StatefulWidget {
@@ -69,7 +70,14 @@ class _PokemonList extends State<PokemonList> {
       padding: EdgeInsets.all(spacing),
     );
 
-    return Backdrop(child: grid);
+    return Scaffold(
+      appBar: PokeAppBar(
+        text: 'PokeApp',
+      ),
+      body: Backdrop(
+        child: grid,
+      ),
+    );
   }
 
   Widget _buildTile(Pokemon pokemon) {

@@ -22,7 +22,7 @@ class PokemonTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(12.0),
           child: _buildContent(context),
           onTap: onTap == null ? null : () => onTap(pokemon),
-          splashColor: Color(0xFF3E5BA3),
+          splashColor: Color(0xFF81CCCD),
         ),
         height: 100.0,
       ),
