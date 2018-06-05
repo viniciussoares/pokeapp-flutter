@@ -44,15 +44,15 @@ class PokemonTile extends StatelessWidget {
     return Container(
       child: Image.network(
         pokemon.image,
-        fit: BoxFit.cover,
+        fit: BoxFit.fill,
       ),
       decoration: new BoxDecoration(
         border: new Border.all(color: Color(0xFFE3E3E3), width: 2.0),
         color: Colors.white,
-        shape: BoxShape.circle,
+        shape: BoxShape.circle
       ),
       height: 100.0,
-      padding: EdgeInsets.all(8.0),
+      padding: EdgeInsets.all(16.0),
       width: 100.0,
     );
   }
