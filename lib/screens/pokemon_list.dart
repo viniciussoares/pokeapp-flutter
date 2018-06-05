@@ -33,10 +33,6 @@ class _PokemonList extends State<PokemonList> {
 
     final data = JsonDecoder().convert(await json);
 
-    if (data is! List) {
-      throw ('Data retrieved from API is not a Map');
-    }
-
     var pokemons = <Pokemon>[];
 
     data.forEach((item) {
@@ -61,19 +57,25 @@ class _PokemonList extends State<PokemonList> {
       return Backdrop(child: ActivityIndicator());
     }
 
-    var orientation = MediaQuery.of(context).orientation;
-    var rows = orientation == Orientation.portrait ? 2 : 3;
+    final width = MediaQuery.of(context).size.width;
+    final rows = (width / 160.0).round();
+    final spacing = 16.0;
 
-    return Backdrop(child: GridView.count(
-        crossAxisCount: rows,
-        // childAspectRatio: 3.0,
-        children: _pokemons.map((Pokemon item) {
-          return PokemonTile(
-            pokemon: item,
-            onTap: (item) => debugPrint("Pokemon tap"),
-          );
-        }).toList(),
-      )
+    var grid = GridView.count(
+      children: _pokemons.map((Pokemon item) => _buildTile(item)).toList(),
+      crossAxisCount: rows,
+      crossAxisSpacing: spacing,
+      mainAxisSpacing: spacing,
+      padding: EdgeInsets.all(spacing),
+    );
+
+    return Backdrop(child: grid);
+  }
+
+  Widget _buildTile(Pokemon pokemon) {
+    return PokemonTile(
+      pokemon: pokemon,
+      onTap: (item) => debugPrint("Pokemon tap"),
     );
   }
 }
