@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../components/avatar.dart';
 import '../components/backdrop.dart';
-import '../components/poke_app_bar.dart';
 import '../model/pokemon.dart';
 
 class PokemonDetail extends StatefulWidget {
@@ -18,8 +17,9 @@ class _PokemonDetail extends State<PokemonDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PokeAppBar(
-        text: widget.pokemon.name,
+      appBar: AppBar(
+        backgroundColor: Color(0xFF81CCCD),
+        title: Text('PokeApp'),
       ),
       body: Backdrop(
         child: ListView(

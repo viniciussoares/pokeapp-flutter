@@ -1,33 +1,26 @@
 import 'package:flutter/material.dart';
 
-const _defaultColors = [Color(0xFF89D0CC), Color(0xFFEAF6B4)];
+const _defaultColors = [Color(0xFF81CCCD), Color(0xFFEAF6B4)];
 
 class Backdrop extends StatelessWidget {
+  Backdrop({ Key key, this.child }): super(key: key);
+
   final Widget child;
-  final double elevation;
-  final List<Color> colors;
-  
-  Backdrop({ 
-    Key key,
-    this.child,
-    this.elevation = 0.0, 
-    this.colors = _defaultColors
-  }): super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return new Material(
-      child: Container(
-        child: child,
-        decoration: new BoxDecoration(
-          gradient: new LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: colors,
-          ),
+    return new Container(
+      child: child,
+      decoration: new BoxDecoration(
+        gradient: new LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xFF81CCCD),
+            Color(0xFFEAF6B4)
+          ],
         ),
       ),
-      elevation: elevation,
     );
   }
 }

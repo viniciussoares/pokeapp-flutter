@@ -25,7 +25,7 @@ class Avatar extends StatelessWidget {
         shape: BoxShape.circle
       ),
       height: size,
-      padding: EdgeInsets.all(size * 0.16),
+      padding: EdgeInsets.all(size * 0.2),
       margin: margin,
       width: size,
     );

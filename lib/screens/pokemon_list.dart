@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import '../components/activity_indicator.dart';
 import '../components/backdrop.dart';
 import '../components/pokemon_tile.dart';
-import '../components/poke_app_bar.dart';
 import '../model/pokemon.dart';
 import '../screens/pokemon_detail.dart';
 
@@ -72,8 +71,9 @@ class _PokemonList extends State<PokemonList> {
     );
 
     return Scaffold(
-      appBar: PokeAppBar(
-        text: 'PokeApp',
+      appBar: AppBar(
+        backgroundColor: Color(0xFF81CCCD),
+        title: Text('PokeApp'),
       ),
       body: Backdrop(
         child: grid,
