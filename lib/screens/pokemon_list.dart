@@ -8,6 +8,7 @@ import '../components/backdrop.dart';
 import '../components/pokemon_tile.dart';
 import '../components/poke_app_bar.dart';
 import '../model/pokemon.dart';
+import '../screens/pokemon_detail.dart';
 
 class PokemonList extends StatefulWidget {
   const PokemonList();
@@ -83,7 +84,11 @@ class _PokemonList extends State<PokemonList> {
   Widget _buildTile(Pokemon pokemon) {
     return PokemonTile(
       pokemon: pokemon,
-      onTap: (item) => debugPrint("Pokemon tap"),
+      onTap: (item) => Navigator.of(context).push(
+        new PageRouteBuilder(
+          pageBuilder: (_, __, ___) => new PokemonDetail(item),
+        )
+      ),
     );
   }
 }
