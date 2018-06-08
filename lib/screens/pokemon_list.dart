@@ -28,15 +28,12 @@ class _PokemonList extends State<PokemonList> {
   }
 
   Future<void> _retrieveLocalPokemons() async {
-    final json = DefaultAssetBundle
-        .of(context)
-        .loadString('assets/data/pokemons.json');
-
-    final data = JsonDecoder().convert(await json);
+    final data = DefaultAssetBundle.of(context).loadString('assets/data/pokemons.json');
+    final json = JsonDecoder().convert(await data);
 
     var pokemons = <Pokemon>[];
 
-    data.forEach((item) {
+    json.forEach((item) {
       var pokemon = Pokemon(
         id: item["id"],
         name: item["name"],

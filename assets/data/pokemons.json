@@ -1,52 +1,1032 @@
 [
   {
     "id": 1,
+    "image": "https://img.pokemondb.net/artwork/bulbasaur.jpg",
     "name": "Bulbasaur",
-    "image": "https://img.pokemondb.net/artwork/bulbasaur.jpg"
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "height": "0.79m",
+    "weight": "7.76kg",
+    "resistant": "Water, Electric, Grass, Fighting, Fairy",
+    "weaknesses": "Fire, Ice, Flying, Psychic",
+    "evolutions": [
+      {
+        "id": 2,
+        "name": "Ivysaur",
+        "image": "https://img.pokemondb.net/artwork/ivysaur.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Venusaur",
+        "image": "https://img.pokemondb.net/artwork/venusaur.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Tackle",
+          "damage": 12
+        },
+        {
+          "name": "Vine Whip",
+          "damage": 7
+        }
+      ],
+      "special": [
+        {
+          "name": "Power Whip",
+          "damage": 70
+        },
+        {
+          "name": "Seed Bomb",
+          "damage": 40
+        },
+        {
+          "name": "Sludge Bomb",
+          "damage": 55
+        }
+      ]
+    }
   },
   {
     "id": 2,
+    "image": "https://img.pokemondb.net/artwork/ivysaur.jpg",
     "name": "Ivysaur",
-    "image": "https://img.pokemondb.net/artwork/ivysaur.jpg"
+    "types": "Grass, Poison",
+    "height": "1.13m",
+    "weight": "14.63kg",
+    "resistant": "Water, Electric, Grass, Fighting, Fairy",
+    "weaknesses": "Fire, Ice, Flying, Psychic",
+    "evolutions": [
+      {
+        "id": 3,
+        "name": "Venusaur",
+        "image": "https://img.pokemondb.net/artwork/venusaur.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Razor Leaf",
+          "damage": 15
+        },
+        {
+          "name": "Vine Whip",
+          "damage": 7
+        }
+      ],
+      "special": [
+        {
+          "name": "Power Whip",
+          "damage": 70
+        },
+        {
+          "name": "Sludge Bomb",
+          "damage": 55
+        },
+        {
+          "name": "Solar Beam",
+          "damage": 120
+        }
+      ]
+    }
   },
   {
     "id": 3,
+    "image": "https://img.pokemondb.net/artwork/venusaur.jpg",
     "name": "Venusaur",
-    "image": "https://img.pokemondb.net/artwork/venusaur.jpg"
+    "types": "Grass, Poison",
+    "height": "2.25m",
+    "weight": "112.5kg",
+    "resistant": "Water, Electric, Grass, Fighting, Fairy",
+    "weaknesses": "Fire, Ice, Flying, Psychic",
+    "evolutions": [],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Razor Leaf",
+          "damage": 15
+        },
+        {
+          "name": "Vine Whip",
+          "damage": 7
+        }
+      ],
+      "special": [
+        {
+          "name": "Petal Blizzard",
+          "damage": 65
+        },
+        {
+          "name": "Sludge Bomb",
+          "damage": 55
+        },
+        {
+          "name": "Solar Beam",
+          "damage": 120
+        }
+      ]
+    }
   },
   {
     "id": 4,
+    "image": "https://img.pokemondb.net/artwork/charmander.jpg",
     "name": "Charmander",
-    "image": "https://img.pokemondb.net/artwork/charmander.jpg"
+    "types": "Fire",
+    "height": "0.68m",
+    "weight": "9.56kg",
+    "resistant": "Fire, Grass, Ice, Bug, Steel, Fairy",
+    "weaknesses": "Water, Ground, Rock",
+    "evolutions": [
+      {
+        "id": 5,
+        "name": "Charmeleon",
+        "image": "https://img.pokemondb.net/artwork/charmeleon.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Charizard",
+        "image": "https://img.pokemondb.net/artwork/charizard.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Ember",
+          "damage": 10
+        },
+        {
+          "name": "Scratch",
+          "damage": 6
+        }
+      ],
+      "special": [
+        {
+          "name": "Flame Burst",
+          "damage": 30
+        },
+        {
+          "name": "Flame Charge",
+          "damage": 25
+        },
+        {
+          "name": "Flamethrower",
+          "damage": 55
+        }
+      ]
+    }
   },
   {
     "id": 5,
+    "image": "https://img.pokemondb.net/artwork/charmeleon.jpg",
     "name": "Charmeleon",
-    "image": "https://img.pokemondb.net/artwork/charmeleon.jpg"
+    "types": "Fire",
+    "height": "1.24m",
+    "weight": "21.38kg",
+    "resistant": "Fire, Grass, Ice, Bug, Steel, Fairy",
+    "weaknesses": "Water, Ground, Rock",
+    "evolutions": [
+      {
+        "id": 6,
+        "name": "Charizard",
+        "image": "https://img.pokemondb.net/artwork/charizard.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Ember",
+          "damage": 10
+        },
+        {
+          "name": "Scratch",
+          "damage": 6
+        }
+      ],
+      "special": [
+        {
+          "name": "Fire Punch",
+          "damage": 40
+        },
+        {
+          "name": "Flame Burst",
+          "damage": 30
+        },
+        {
+          "name": "Flamethrower",
+          "damage": 55
+        }
+      ]
+    }
   },
   {
     "id": 6,
+    "image": "https://img.pokemondb.net/artwork/charizard.jpg",
     "name": "Charizard",
-    "image": "https://img.pokemondb.net/artwork/charizard.jpg"
+    "types": "Fire, Flying",
+    "height": "1.91m",
+    "weight": "101.81kg",
+    "resistant": "Fire, Grass, Fighting, Bug, Steel, Fairy",
+    "weaknesses": "Water, Electric, Rock",
+    "evolutions": [],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Ember",
+          "damage": 10
+        },
+        {
+          "name": "Wing Attack",
+          "damage": 9
+        }
+      ],
+      "special": [
+        {
+          "name": "Dragon Claw",
+          "damage": 35
+        },
+        {
+          "name": "Fire Blast",
+          "damage": 100
+        },
+        {
+          "name": "Flamethrower",
+          "damage": 55
+        }
+      ]
+    }
   },
   {
     "id": 7,
+    "image": "https://img.pokemondb.net/artwork/squirtle.jpg",
     "name": "Squirtle",
-    "image": "https://img.pokemondb.net/artwork/squirtle.jpg"
+    "types": "Water",
+    "height": "0.56m",
+    "weight": "10.13kg",
+    "resistant": "Fire, Water, Ice, Steel",
+    "weaknesses": "Electric, Grass",
+    "evolutions": [
+      {
+        "id": 8,
+        "name": "Wartortle",
+        "image": "https://img.pokemondb.net/artwork/wartortle.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Blastoise",
+        "image": "https://img.pokemondb.net/artwork/blastoise.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Bubble",
+          "damage": 25
+        },
+        {
+          "name": "Tackle",
+          "damage": 12
+        }
+      ],
+      "special": [
+        {
+          "name": "Aqua Jet",
+          "damage": 25
+        },
+        {
+          "name": "Aqua Tail",
+          "damage": 45
+        },
+        {
+          "name": "Water Pulse",
+          "damage": 35
+        }
+      ]
+    }
   },
   {
     "id": 8,
+    "image": "https://img.pokemondb.net/artwork/wartortle.jpg",
     "name": "Wartortle",
-    "image": "https://img.pokemondb.net/artwork/wartortle.jpg"
+    "types": "Water",
+    "height": "1.13m",
+    "weight": "25.31kg",
+    "resistant": "Fire, Water, Ice, Steel",
+    "weaknesses": "Electric, Grass",
+    "evolutions": [
+      {
+        "id": 9,
+        "name": "Blastoise",
+        "image": "https://img.pokemondb.net/artwork/blastoise.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Bite",
+          "damage": 6
+        },
+        {
+          "name": "Water Gun",
+          "damage": 6
+        }
+      ],
+      "special": [
+        {
+          "name": "Aqua Jet",
+          "damage": 25
+        },
+        {
+          "name": "Gunk Shot",
+          "damage": 65
+        },
+        {
+          "name": "Hydro Pump",
+          "damage": 90
+        },
+        {
+          "name": "Ice Beam",
+          "damage": 65
+        }
+      ]
+    }
   },
   {
     "id": 9,
+    "image": "https://img.pokemondb.net/artwork/blastoise.jpg",
     "name": "Blastoise",
-    "image": "https://img.pokemondb.net/artwork/blastoise.jpg"
+    "types": "Water",
+    "height": "1.8m",
+    "weight": "96.19kg",
+    "resistant": "Fire, Water, Ice, Steel",
+    "weaknesses": "Electric, Grass",
+    "evolutions": [],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Bite",
+          "damage": 6
+        },
+        {
+          "name": "Water Gun",
+          "damage": 6
+        }
+      ],
+      "special": [
+        {
+          "name": "Flash Cannon",
+          "damage": 60
+        },
+        {
+          "name": "Gunk Shot",
+          "damage": 65
+        },
+        {
+          "name": "Hydro Pump",
+          "damage": 90
+        },
+        {
+          "name": "Ice Beam",
+          "damage": 65
+        }
+      ]
+    }
   },
   {
     "id": 10,
+    "image": "https://img.pokemondb.net/artwork/caterpie.jpg",
     "name": "Caterpie",
-    "image": "https://img.pokemondb.net/artwork/caterpie.jpg"
+    "types": "Bug",
+    "height": "0.34m",
+    "weight": "3.26kg",
+    "resistant": "Grass, Fighting, Ground",
+    "weaknesses": "Fire, Flying, Rock",
+    "evolutions": [
+      {
+        "id": 11,
+        "name": "Metapod",
+        "image": "https://img.pokemondb.net/artwork/metapod.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Butterfree",
+        "image": "https://img.pokemondb.net/artwork/butterfree.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Bug Bite",
+          "damage": 5
+        },
+        {
+          "name": "Tackle",
+          "damage": 12
+        }
+      ],
+      "special": [
+        {
+          "name": "Struggle",
+          "damage": 15
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "image": "https://img.pokemondb.net/artwork/metapod.jpg",
+    "name": "Metapod",
+    "types": "Bug",
+    "height": "0.79m",
+    "weight": "11.14kg",
+    "resistant": "Grass, Fighting, Ground",
+    "weaknesses": "Fire, Flying, Rock",
+    "evolutions": [
+      {
+        "id": 12,
+        "name": "Butterfree",
+        "image": "https://img.pokemondb.net/artwork/butterfree.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Bug Bite",
+          "damage": 5
+        },
+        {
+          "name": "Tackle",
+          "damage": 12
+        }
+      ],
+      "special": [
+        {
+          "name": "Struggle",
+          "damage": 15
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "image": "https://img.pokemondb.net/artwork/butterfree.jpg",
+    "name": "Butterfree",
+    "types": "Bug, Flying",
+    "height": "1.24m",
+    "weight": "36kg",
+    "resistant": "Grass, Fighting, Ground, Bug",
+    "weaknesses": "Fire, Electric, Ice, Flying, Rock",
+    "evolutions": [],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Bug Bite",
+          "damage": 5
+        },
+        {
+          "name": "Confusion",
+          "damage": 15
+        }
+      ],
+      "special": [
+        {
+          "name": "Bug Buzz",
+          "damage": 75
+        },
+        {
+          "name": "Psychic",
+          "damage": 55
+        },
+        {
+          "name": "Signal Beam",
+          "damage": 45
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "image": "https://img.pokemondb.net/artwork/weedle.jpg",
+    "name": "Weedle",
+    "types": "Bug, Poison",
+    "height": "0.34m",
+    "weight": "3.6kg",
+    "resistant": "Grass, Fighting, Poison, Bug, Fairy",
+    "weaknesses": "Fire, Flying, Psychic, Rock",
+    "evolutions": [
+      {
+        "id": 14,
+        "name": "Kakuna",
+        "image": "https://img.pokemondb.net/artwork/kakuna.jpg"
+      },
+      {
+        "id": 15,
+        "name": "Beedrill",
+        "image": "https://img.pokemondb.net/artwork/beedrill.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Bug Bite",
+          "damage": 5
+        },
+        {
+          "name": "Poison Sting",
+          "damage": 6
+        }
+      ],
+      "special": [
+        {
+          "name": "Struggle",
+          "damage": 15
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "image": "https://img.pokemondb.net/artwork/kakuna.jpg",
+    "name": "Kakuna",
+    "types": "Bug, Poison",
+    "height": "0.68m",
+    "weight": "11.25kg",
+    "resistant": "Grass, Fighting, Poison, Bug, Fairy",
+    "weaknesses": "Fire, Flying, Psychic, Rock",
+    "evolutions": [
+      {
+        "id": 15,
+        "name": "Beedrill",
+        "image": "https://img.pokemondb.net/artwork/beedrill.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Bug Bite",
+          "damage": 5
+        },
+        {
+          "name": "Poison Sting",
+          "damage": 6
+        }
+      ],
+      "special": [
+        {
+          "name": "Struggle",
+          "damage": 15
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "image": "https://img.pokemondb.net/artwork/beedrill.jpg",
+    "name": "Beedrill",
+    "types": "Bug, Poison",
+    "height": "1.13m",
+    "weight": "33.19kg",
+    "resistant": "Grass, Fighting, Poison, Bug, Fairy",
+    "weaknesses": "Fire, Flying, Psychic, Rock",
+    "evolutions": [],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Bug Bite",
+          "damage": 5
+        },
+        {
+          "name": "Poison Jab",
+          "damage": 12
+        }
+      ],
+      "special": [
+        {
+          "name": "Aerial Ace",
+          "damage": 30
+        },
+        {
+          "name": "Sludge Bomb",
+          "damage": 55
+        },
+        {
+          "name": "X Scissor",
+          "damage": 35
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "image": "https://img.pokemondb.net/artwork/pidgey.jpg",
+    "name": "Pidgey",
+    "types": "Normal, Flying",
+    "height": "0.34m",
+    "weight": "2.02kg",
+    "resistant": "Grass, Ground, Bug, Ghost",
+    "weaknesses": "Electric, Ice, Rock",
+    "evolutions": [
+      {
+        "id": 17,
+        "name": "Pidgeotto",
+        "image": "https://img.pokemondb.net/artwork/pidgeotto.jpg"
+      },
+      {
+        "id": 18,
+        "name": "Pidgeot",
+        "image": "https://img.pokemondb.net/artwork/pidgeot.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Quick Attack",
+          "damage": 10
+        },
+        {
+          "name": "Tackle",
+          "damage": 12
+        }
+      ],
+      "special": [
+        {
+          "name": "Aerial Ace",
+          "damage": 30
+        },
+        {
+          "name": "Air Cutter",
+          "damage": 30
+        },
+        {
+          "name": "Twister",
+          "damage": 25
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "image": "https://img.pokemondb.net/artwork/pidgeotto.jpg",
+    "name": "Pidgeotto",
+    "types": "Normal, Flying",
+    "height": "1.24m",
+    "weight": "33.75kg",
+    "resistant": "Grass, Ground, Bug, Ghost",
+    "weaknesses": "Electric, Ice, Rock",
+    "evolutions": [
+      {
+        "id": 18,
+        "name": "Pidgeot",
+        "image": "https://img.pokemondb.net/artwork/pidgeot.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Steel Wing",
+          "damage": 15
+        },
+        {
+          "name": "Wing Attack",
+          "damage": 9
+        }
+      ],
+      "special": [
+        {
+          "name": "Aerial Ace",
+          "damage": 30
+        },
+        {
+          "name": "Air Cutter",
+          "damage": 30
+        },
+        {
+          "name": "Twister",
+          "damage": 25
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "image": "https://img.pokemondb.net/artwork/pidgeot.jpg",
+    "name": "Pidgeot",
+    "types": "Normal, Flying",
+    "height": "1.69m",
+    "weight": "44.44kg",
+    "resistant": "Grass, Ground, Bug, Ghost",
+    "weaknesses": "Electric, Ice, Rock",
+    "evolutions": [],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Steel Wing",
+          "damage": 15
+        },
+        {
+          "name": "Wing Attack",
+          "damage": 9
+        }
+      ],
+      "special": [
+        {
+          "name": "Aerial Ace",
+          "damage": 30
+        },
+        {
+          "name": "Air Cutter",
+          "damage": 30
+        },
+        {
+          "name": "Hurricane",
+          "damage": 80
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "image": "https://img.pokemondb.net/artwork/rattata.jpg",
+    "name": "Rattata",
+    "types": "Normal",
+    "height": "0.34m",
+    "weight": "3.94kg",
+    "resistant": "Ghost",
+    "weaknesses": "Fighting",
+    "evolutions": [
+      {
+        "id": 20,
+        "name": "Raticate",
+        "image": "https://img.pokemondb.net/artwork/raticate.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Quick Attack",
+          "damage": 10
+        },
+        {
+          "name": "Tackle",
+          "damage": 12
+        }
+      ],
+      "special": [
+        {
+          "name": "Body Slam",
+          "damage": 40
+        },
+        {
+          "name": "Dig",
+          "damage": 70
+        },
+        {
+          "name": "Hyper Fang",
+          "damage": 35
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "image": "https://img.pokemondb.net/artwork/raticate.jpg",
+    "name": "Raticate",
+    "types": "Normal",
+    "height": "0.79m",
+    "weight": "20.81kg",
+    "resistant": "Ghost",
+    "weaknesses": "Fighting",
+    "evolutions": [],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Bite",
+          "damage": 6
+        },
+        {
+          "name": "Quick Attack",
+          "damage": 10
+        }
+      ],
+      "special": [
+        {
+          "name": "Dig",
+          "damage": 70
+        },
+        {
+          "name": "Hyper Beam",
+          "damage": 120
+        },
+        {
+          "name": "Hyper Fang",
+          "damage": 35
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "image": "https://img.pokemondb.net/artwork/spearow.jpg",
+    "name": "Spearow",
+    "types": "Normal, Flying",
+    "height": "0.34m",
+    "weight": "2.25kg",
+    "resistant": "Grass, Ground, Bug, Ghost",
+    "weaknesses": "Electric, Ice, Rock",
+    "evolutions": [
+      {
+        "id": 22,
+        "name": "Fearow",
+        "image": "https://img.pokemondb.net/artwork/fearow.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Peck",
+          "damage": 10
+        },
+        {
+          "name": "Quick Attack",
+          "damage": 10
+        }
+      ],
+      "special": [
+        {
+          "name": "Aerial Ace",
+          "damage": 30
+        },
+        {
+          "name": "Drill Peck",
+          "damage": 40
+        },
+        {
+          "name": "Twister",
+          "damage": 25
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "image": "https://img.pokemondb.net/artwork/fearow.jpg",
+    "name": "Fearow",
+    "types": "Normal, Flying",
+    "height": "1.35m",
+    "weight": "42.75kg",
+    "resistant": "Grass, Ground, Bug, Ghost",
+    "weaknesses": "Electric, Ice, Rock",
+    "evolutions": [],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Peck",
+          "damage": 10
+        },
+        {
+          "name": "Steel Wing",
+          "damage": 15
+        }
+      ],
+      "special": [
+        {
+          "name": "Aerial Ace",
+          "damage": 30
+        },
+        {
+          "name": "Drill Run",
+          "damage": 50
+        },
+        {
+          "name": "Twister",
+          "damage": 25
+        }
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "image": "https://img.pokemondb.net/artwork/ekans.jpg",
+    "name": "Ekans",
+    "types": "Poison",
+    "height": "2.25m",
+    "weight": "7.76kg",
+    "resistant": "Grass, Fighting, Poison, Bug, Fairy",
+    "weaknesses": "Ground, Psychic",
+    "evolutions": [
+      {
+        "id": 24,
+        "name": "Arbok",
+        "image": "https://img.pokemondb.net/artwork/arbok.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Acid",
+          "damage": 10
+        },
+        {
+          "name": "Poison Sting",
+          "damage": 6
+        }
+      ],
+      "special": [
+        {
+          "name": "Gunk Shot",
+          "damage": 65
+        },
+        {
+          "name": "Sludge Bomb",
+          "damage": 55
+        },
+        {
+          "name": "Wrap",
+          "damage": 25
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "image": "https://img.pokemondb.net/artwork/arbok.jpg",
+    "name": "Arbok",
+    "types": "Poison",
+    "height": "3.94m",
+    "weight": "73.13kg",
+    "resistant": "Grass, Fighting, Poison, Bug, Fairy",
+    "weaknesses": "Ground, Psychic",
+    "evolutions": [],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Acid",
+          "damage": 10
+        },
+        {
+          "name": "Bite",
+          "damage": 6
+        }
+      ],
+      "special": [
+        {
+          "name": "Dark Pulse",
+          "damage": 45
+        },
+        {
+          "name": "Gunk Shot",
+          "damage": 65
+        },
+        {
+          "name": "Sludge Wave",
+          "damage": 70
+        }
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "image": "https://img.pokemondb.net/artwork/pikachu.jpg",
+    "name": "Pikachu",
+    "types": "Electric",
+    "height": "0.45m",
+    "weight": "6.75kg",
+    "resistant": "Electric, Flying, Steel",
+    "weaknesses": "Ground",
+    "evolutions": [
+      {
+        "id": 26,
+        "name": "Raichu",
+        "image": "https://img.pokemondb.net/artwork/raichu.jpg"
+      }
+    ],
+    "attacks": {
+      "fast": [
+        {
+          "name": "Quick Attack",
+          "damage": 10
+        },
+        {
+          "name": "Thunder Shock",
+          "damage": 5
+        }
+      ],
+      "special": [
+        {
+          "name": "Discharge",
+          "damage": 35
+        },
+        {
+          "name": "Thunder",
+          "damage": 100
+        },
+        {
+          "name": "Thunderbolt",
+          "damage": 55
+        }
+      ]
+    }
   }
 ]

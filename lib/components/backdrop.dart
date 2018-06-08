@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-const _defaultColors = [Color(0xFF81CCCD), Color(0xFFEAF6B4)];
-
 class Backdrop extends StatelessWidget {
   Backdrop({ Key key, this.child }): super(key: key);
 
