@@ -20,14 +20,12 @@ class _PokemonList extends State<PokemonList> {
   final _pokemons = <Pokemon>[];
 
   @override
-  Future<void> didChangeDependencies() async {
-    super.didChangeDependencies();
-    if (_pokemons.isEmpty) {
-      await _retrieveLocalPokemons();
-    }
+  void initState() {
+    super.initState();
+    this._loadPokemons();
   }
 
-  Future<void> _retrieveLocalPokemons() async {
+  _loadPokemons() async {
     final data = DefaultAssetBundle.of(context).loadString('assets/data/pokemons.json');
     final json = JsonDecoder().convert(await data);
 
