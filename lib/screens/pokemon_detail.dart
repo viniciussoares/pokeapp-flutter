@@ -21,7 +21,7 @@ class _PokemonDetail extends State<PokemonDetail> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFF81CCCD),
-        title: Text('PokeApp'),
+        title: Text(widget.pokemon.name),
       ),
       body: Backdrop(
         child: ListView(
@@ -33,25 +33,19 @@ class _PokemonDetail extends State<PokemonDetail> {
               margin: EdgeInsets.only(bottom: 16.0)
             ),
             TextWithMargin(
-              text: widget.pokemon.name, 
+              text: widget.pokemon.name,
               color: Color(0xFF3E5BA3), 
               fontSize: 28.0, 
               margin: EdgeInsets.only(bottom: 4.0)
             ),
             TextWithMargin(
-              text: 'Seed Pokemon', 
+              text: widget.pokemon.type, 
               color: Color(0xFF919191), 
               fontSize: 14.0, 
               margin: EdgeInsets.only(bottom: 24.0)
             ),
-            PokeInfo(
-              title: 'ATTACKS',
-              body: 'Water, Electric, Grass, Fighting, Fairy',
-            ),
-            PokeInfo(
-              title: 'WEAKNESSES',
-              body: 'Fire, Ice, Flying, Psychic',
-            ),
+            PokeInfo(title: 'RESISTANT', body: widget.pokemon.resistant),
+            PokeInfo(title: 'WEAKNESSES', body: widget.pokemon.weaknesses),
           ],
         ),
       ),
