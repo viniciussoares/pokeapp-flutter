@@ -28,18 +28,7 @@ class _PokemonList extends State<PokemonList> {
   _loadPokemons() async {
     final data = DefaultAssetBundle.of(context).loadString('assets/data/pokemons.json');
     final json = JsonDecoder().convert(await data);
-
-    var pokemons = <Pokemon>[];
-
-    json.forEach((item) {
-      var pokemon = Pokemon(
-        id: item["id"],
-        name: item["name"],
-        image: item["image"],
-      );
-
-      pokemons.add(pokemon);
-    });
+    final pokemons = json.map<Pokemon>((jsonItem) => new Pokemon.fromJson(jsonItem)).toList();
 
     setState(() {
       _pokemons.clear();
